@@ -341,7 +341,15 @@
     color: #10c5ef;
   }
 
-  .timeline-company { font-size: 1rem; font-weight: 500; color: var(--muted); margin-bottom: 0.75rem; }
+  .timeline-company {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    background: var(--grad-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
   .timeline-desc { color: var(--muted); font-size: 1rem; line-height: 1.8; margin-bottom: 0.85rem; }
 
@@ -921,6 +929,12 @@
         <p class="edu-school">Northcentral Technical College</p>
         <p class="edu-year">Earned 2026 · 4.0 GPA</p>
         <p class="edu-notes">Studied the foundations of Artificial Intelligence, including foundational models, machine learning frameworks, deep learning, and generative AI. Reviewed real use cases of business applications, AI governance, and ethics.</p>
+        <div class="timeline-tags" style="margin-top:0.75rem;">
+          <span class="tag">Claude</span>
+          <span class="tag">GPT</span>
+          <span class="tag">Gemini</span>
+          <span class="tag">Generative AI</span>
+        </div>
       </div>
     </div>
 
