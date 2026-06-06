@@ -644,20 +644,21 @@
     nav { padding: 0 1rem; }
     .nav-links { display: none; }
 
-    /* On mobile background image shifts to top, text fills below */
+    /* On mobile remove background image entirely */
     #home {
-      background-position: center top;
-      background-size: 100% auto;
-      align-items: flex-end;
-      height: 100svh;
-      max-height: 100svh;
+      background-image: none;
+      background-color: var(--bg);
+      align-items: center;
+      height: auto;
+      max-height: none;
+      padding: 80px 1.5rem 3rem;
     }
     .hero-content {
       width: 100%;
       min-width: unset;
       margin-left: 0;
-      padding: 2rem 1.5rem 3rem;
-      background: linear-gradient(to top, #f8f6f3 60%, rgba(248,246,243,0.85) 80%, transparent 100%);
+      padding: 0;
+      background: transparent;
     }
     .hero-name { font-size: clamp(2rem, 9vw, 3rem); max-width: 100%; }
     .hero-greeting { max-width: 100%; }
